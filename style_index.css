@@ -32,7 +32,7 @@ header{
 
 #doe_agr{
     text-decoration: none;
-    color: black;
+    color: red;
 }
 #doe_agr:hover{
     color: #fff;
@@ -119,13 +119,14 @@ element.style {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 10px 0px 0px 10px;
     margin-top: 50px;
     right: 0;
-    top: 90px;
+    top: 75px;
     z-index: 1;
 }
+
 label{
     width: 70px;
     height: 40px;
@@ -174,24 +175,6 @@ label::after{
 }
 label:active:after{
     width: 30px;
-}
-#aumentar_fonte{
-    color: #000;
-    width: 40px;
-    height: auto;
-    opacity: 100%;
-    border-radius: 200px;
-    font-size: 25px;
-    font-weight: 600;
-}
-#diminuir_fonte{
-    color: #000;
-    width: 40px;
-    height: auto;
-    opacity: 100%;
-    border-radius: 200px;
-    font-size: 25px;
-    font-weight: 600;
 }
 
 /*-----------------SOBRE NÓS-----------------*/
@@ -548,6 +531,91 @@ footer a:hover{
 #redes_sociais img:hover{
     background-color: #185366;
 }
-@media only screen and (max-width:576px){
-    
+@media only screen and (max-width:776px){
+    #img_como_doar{
+        width: 100vw;
+        height: 50vh;
+        background-size: contain;
+    }
+   
+    #como_doar{
+        position: absolute;
+        width: 40vw;
+        height: 20vh;
+        font-size: 35px;
+        margin: 0;
+        left: 0;
+        top: 80px;
+    }
+
+    #sobre-nos{
+        width: 100vw;
+        height: 90vh;
+        background-size: cover;
+    }
+
+    #sobre-nos p{
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #agendamento{
+        width: 100vw;
+        height: 50vh;
+        background-size: contain;
+    }
+   
+    #agendamento button{
+        position: absolute;
+        width: 50vw;
+        height: 20vh;
+        font-size: 35px;
+        margin: 0;
+        left: 0;
+        top: 80px;
+    }
+
+    #estoque_e_informes {
+        position: relative;
+        height: 180vh;
+        width: 100vw;
+        background-color: var(--body-bg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #sangue{
+        width: 80vw;
+        height: 65vh;
+    }
+
+    #informes{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    #section_gov p{
+        width: 80vw;
+    }
+
+    footer{
+        height: 160vh;
+    }
+
+    #links_footer_top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #links_footer_bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #redes_sociais{
+        margin: 0;
+    }
 }

@@ -19,7 +19,7 @@ main{
 
 header{
     position: fixed;
-    z-index: 6;
+    z-index: 1;
     width: 100%;
     top: 0;
 
@@ -42,8 +42,7 @@ header{
 
 .nav-link{
     font-family: 'Poppins';
-    font-size: 19px;
-    margin-right: 13px;
+    font-size: 17px;
     color: var(--body-color);
     padding-top: 10px;
     margin-right: 13px;
@@ -115,12 +114,12 @@ element.style {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 10px 0px 0px 10px;
     margin-top: 50px;
     right: 0;
-    top: 90px;
-    z-index: 1;
+    top: 75px;
+    z-index: 6;
 }
 
 label{
@@ -177,6 +176,96 @@ label:active:after{
 }
 
 
+
+/* ------------- footer ------------- */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #392D2D;
+}
+footer a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover{
+    color: #09f;
+    transition: all 0.4s;
+}
+#logo_footer{
+    width: auto;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#links_footer_top{
+    width: 70%;
+    height:50%;
+    float: right;
+    display: flex;
+}
+#sobre-nos_footer{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+#sobre-nos_footer a{
+    margin-top: 18px !important;
+}
+
+#inicio_footer{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+#inicio_footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+#inicio_footer a:hover{
+    color: #09f;
+
+}
+#fale_conosco{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+#links_footer_bottom{
+    width: 70%;
+    height:50%;
+    float: right;
+    display: flex;
+}
+#imprensa{
+    width: 340px;
+    height: 150px;
+    text-align: left;
+    color: white;
+}
+#redes_sociais{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-left: 150px;
+}
+#redes_sociais img{
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#redes_sociais img:hover{
+    background-color: #185366;
+}
 /*  ============= CSS DA PÁGINA DE COMO DOAR =============*/
 
 /* ============= NAV BAR =============*/
@@ -381,13 +470,6 @@ label:active:after{
     padding-left: 2%;
     font-size: 20px;
 }
-#doe_agr{
-    text-decoration: none;
-    color: black;
-}
-#doe_agr:hover{
-    color: #fff;
-}
 .condicoes .itens_img{
     display: flex;
     align-items: center;
@@ -495,113 +577,13 @@ label:active:after{
     font-size: 20px;
 }
 
-/* ------------- footer ------------- */
-
-footer{
-    width: 100%;
-    height: 400px;
-    background-color: #392D2D;
-}
-footer a{
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-}
-footer a:hover{
-    color: #09f;
-    transition: all 0.4s;
-}
-#logo_footer{
-    width: auto;
-    height: 70px;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-#links_footer_top{
-    width: 70%;
-    height:50%;
-    float: right;
-    display: flex;
-}
-#sobre-nos_footer{
-    width: 250px;
-    height: 150px;
-    text-align: left;
-    color: white;
-    margin-top: 50px;   
-}
-#sobre-nos_footer a{
-    margin-top: 18px !important;
-}
-
-#inicio_footer{
-    width: 250px;
-    height: 150px;
-    text-align: left;
-    color: white;
-    margin-top: 50px;   
-}
-#inicio_footer a{
-    text-decoration: none;
-    color: white;
-    margin-top: 10px;
-}
-#inicio_footer a:hover{
-    color: #09f;
-
-}
-#fale_conosco{
-    width: 250px;
-    height: 150px;
-    text-align: left;
-    color: white;
-    margin-top: 50px;   
-}
-#links_footer_bottom{
-    width: 70%;
-    height:50%;
-    float: right;
-    display: flex;
-}
-#imprensa{
-    width: 340px;
-    height: 150px;
-    text-align: left;
-    color: white;
-}
-#redes_sociais{
-    width: 250px;
-    height: 150px;
-    text-align: left;
-    color: white;
-    margin-left: 150px;
-}
-#redes_sociais img{
-    height: 50px;
-    width: auto;
-    cursor: pointer;
-    border-radius: 10px;
-}
-#redes_sociais img:hover{
-    background-color: #185366;
-}
 
 @media only screen and (max-width:576px){
     /* *{
         overflow-x: hidden;
     } */
-    footer{
-        display: none;
-    }
-    #sobre-nos_footer{
-        width: 250px;
-        height: 150px;
-        text-align: left;
-        color: white;
-        margin-top: 50px;   
-    }
     #acessibilidade{
-        top: 20rem;
+        top: 15rem;
         width: 15%;
     }
     .sub_nav{
@@ -695,6 +677,24 @@ footer a:hover{
     }
     .texto_pos1{
         width: 80%;
+    }
+
+    footer{
+        height: 160vh;
+    }
+
+    #links_footer_top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #links_footer_bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #redes_sociais{
+        margin: 0;
     }
 }
 @media only screen and (max-width:989px){

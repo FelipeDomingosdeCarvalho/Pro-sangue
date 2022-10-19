@@ -30,10 +30,7 @@ header {
 
 
 /* CSS da header bootstrap */
-.bg-light {
-    --bs-bg-opacity: 1;
-    background-color: var(--header-bg) !important;
-} 
+
 .navbar-brand:hover {
     color: rgb(231, 0, 0);
 }
@@ -42,8 +39,8 @@ header {
     font-family: 'Poppins';
     font-size: 19px;
     margin-right: 13px;
-    color: black;
-    padding-top: 10px;
+    color: var(--body-color);
+    padding-top: 9px;
 }
 
 .nav-link:hover {
@@ -74,6 +71,11 @@ element.style {
     --bs-gradient: none;
 }
 
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: var(--header-bg) !important;
+} 
+
 /* ----------------- HEMOCENTRO ---------------- */
 
 #hemocentro {
@@ -81,7 +83,7 @@ element.style {
     margin: 0 auto;
     width: 90%;
     height: 400px;
-    margin-top: 76px;
+    margin-top: 75px;
 }
 #img_hemocentro{
     width: 100%;
@@ -108,20 +110,20 @@ element.style {
 
 #hemocentro-explicacao {
     position: absolute;
-    width: 600px;
+    width: 70%;
     height: auto;
     top: 150px;
     left: 180px;
-    color: #fff;
-    font-size: 23px;
+    color: rgb(13, 217, 239);
+    font-size: 20px;
     font-weight: bold;
 }
 #hemocentro-explicacao p{
     text-shadow: 
-        -1.0px -1.0px 1px rgb(66, 66, 66),
-        -1.0px 1.0px 1px rgb(66, 66, 66),
-        1.0px -1.0px 1px rgb(66, 66, 66),
-        1.0px 0px 1px rgb(66, 66, 66);
+        -1.0px -1.0px 0px rgb(0, 0, 0),
+        -1.0px 1.0px 0px rgb(0, 0, 0),
+        1.0px -1.0px 0px rgb(0, 0, 0),
+        1.0px 0px 0px rgb(0, 0, 0);
 }
 /* ------------------ Conteudo principal --------------------- */
 
@@ -136,7 +138,6 @@ element.style {
     text-align: center;
 }
 #PDC_titulo{
-    color: var(--body-color);
     font-size: 50px;
     font-weight: 600;
 }
@@ -150,7 +151,7 @@ element.style {
 
 .tit_naopode{
     margin-top: 2px;
-    color: var(--body-color);
+    color: #000;
     background-color: #3ea5e9;
     width: 100%;
     padding: 5px 2% 0 6%;
@@ -165,7 +166,6 @@ element.style {
 .tit_naopode h5{
     font-size: 25px;
     font-weight: 500;
-
 }
 
 .tit_naopode:after {
@@ -187,7 +187,7 @@ element.style {
     overflow: hidden;
     transition: all 0.2s ease-out;
     background-color: #837b7b;
-    color: var(--body-color);
+    color: #FFF;
 }
 .condicoes{
     width: 95%;
@@ -199,7 +199,6 @@ element.style {
     padding-top: 1%;
 }
 .condicoes .itens{
-
     width: 100%;
     display: flex;
     align-items: center;
@@ -220,27 +219,20 @@ element.style {
     width: 100%;
     height: 100%;
 }
-#doe_agr{
-    text-decoration: none;
-    color: black;
-}
-#doe_agr:hover{
-    color: #fff;
-}
-#acessibilidade {
+
+#acessibilidade{
     position: fixed;
     width: 90px;
     height: 50px;
-    background-color: #010101;
-    opacity: .7;
+    background-color: #010101;opacity: .7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 10px 0px 0px 10px;
     margin-top: 50px;
     right: 0;
-    top: 90px;
+    top: 75px;
     z-index: 1;
 }
 
@@ -295,23 +287,6 @@ label:active:after {
     width: 30px;
 }
 
-#aumentar_fonte {
-    width: 40px;
-    height: auto;
-    opacity: 100%;
-    border-radius: 200px;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-#diminuir_fonte {
-    width: 40px;
-    height: auto;
-    opacity: 100%;
-    border-radius: 200px;
-    font-size: 25px;
-    font-weight: 600;
-}
 
 /* =================== Footer ===================== */
 
@@ -402,4 +377,66 @@ footer a:hover{
 }
 #redes_sociais img:hover{
     background-color: #185366;
+}
+@media only screen and (max-width:776px){
+    #hemocentro {
+        height: 250px;
+        margin-top: 75px;
+    }
+    #hemocentro-titulo h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    #hemocentro-titulo {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        text-align: center;
+    }
+    #hemocentro-explicacao {
+        top: 120px;
+        left: 100px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #PDC_titulo{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .tit_naopode h5{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .condicoes .itens p{
+        padding-left: 0;
+        font-size: 16px;
+        align-items: left;
+    }
+    .condicoes .itens{
+        align-items: left;
+        flex-direction: column;
+        height: auto;
+    }
+    .gmap_iframe{
+        width: 90%;
+    }
+
+
+    footer{
+        height: 160vh;
+    }
+
+    #links_footer_top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #links_footer_bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #redes_sociais{
+        margin: 0;
+    }
 }

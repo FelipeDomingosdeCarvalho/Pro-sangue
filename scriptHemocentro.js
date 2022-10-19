@@ -12,12 +12,14 @@ const initialColors = {
     comodoarBg: getStyle(html, "--comodoar-bg"),
     headerBg: getStyle(html, "--header-bg"),
     bodyColor: getStyle(html, "--body-color"),
+    subnavBg: getStyle(html, "--subnav-bg"),
 }
 const darkMode = {
     bodyBg: "#303030",
     comodoarBg:"#252525",
     headerBg: "#3f3f3f",
     bodyColor: "#eaeaea",
+    subnavBg: "#4f4f4f",
 }
 
 const transformKey = key =>
